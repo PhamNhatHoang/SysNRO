@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SystemNRO</title>
+    <!-- Chèn Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Chèn Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Chèn thư viện JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Chèn JavaScript của AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+    <!-- Chèn JavaScript của AngularJS Route -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular-route.js"></script>
+    <!-- Chèn CSS vào HTML -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo text-center">
+                <img src="header.png" alt="">
+            </div>
+        </header>
+
+        <nav class="bg-warning">
+            <a class="navbar-brand" href="https://www.facebook.com/PN.Hoang.stc/">
+                <i class="bi bi-facebook"></i> Phạm Nhật Hoàng
+            </a>
+            
+            <span style="margin-right: 50px;"></span>
+            
+            <a class="navbar-brand" href="https://www.youtube.com/@PNH_Gaming/featured">
+                <i class="bi bi-youtube" ></i> PNH Gaming
+            </a>
+            
+            <span style="margin-right: 50px;"></span>
+            
+            <a class="navbar-brand" href="https://github.com/pnh2004">
+                <i class="bi bi-github"></i> P N H
+            </a>
+        </nav>
+
+        <main class="container mt-4">
+            <div class="row">
+                <!-- Chỉ số sư -->
+                <article class="col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <h5> Chỉ số sư</h5>
+                            <div class="mb-3">
+                                <label for="hpg">Hpg</label>
+                                <input type="number" class="form-control" id="hpg">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="cswan">Chỉ số wan</label>
+                                <input type="number" class="form-control" id="cswan">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptctr">%HP cải trang</label>
+                                <input type="number" class="form-control" id="ptctr">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptvpdl">%Hp vpđl</label>
+                                <input type="number" class="form-control" id="ptvpdl">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptvan">%Hp ván</label>
+                                <input type="number" class="form-control" id="ptvan">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptpet">%Hp pet</label>
+                                <input type="number" class="form-control" id="ptpet">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptbtc2">%Hp btc2</label>
+                                <input type="number" class="form-control" id="ptbtc2">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptdh">%Hp danh hiệu</label>
+                                <input type="number" class="form-control" id="ptdh">
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <h5> Set đồ</h5>
+                            <div class="mb-3">
+                                <label for="ptao">%HP áo</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox8sA" value="8s">
+                                    <label class="form-check-label" for="checkbox8sA">
+                                        8s
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox9sA" value="9s">
+                                    <label class="form-check-label" for="checkbox9sA">
+                                        9s
+                                    </label>
+                                </div>
+                                <select class="form-control" id="ptao">
+                                    <option value="0">0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptwan">%Hp wan</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox8sW" name="timeOptionW"
+                                        value="8s">
+                                    <label class="form-check-label" for="checkbox8sW">
+                                        8s
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox9sW" name="timeOptionW"
+                                        value="9s">
+                                    <label class="form-check-label" for="checkbox9sW">
+                                        9s
+                                    </label>
+                                </div>
+                                <select class="form-control" id="ptwan">
+                                    <option value="0">0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptgang">%Hp găng</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox8sG" value="8s">
+                                    <label class="form-check-label" for="checkbox8sG">
+                                        8s
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox9sG" value="9s">
+                                    <label class="form-check-label" for="checkbox9sG">
+                                        9s
+                                    </label>
+                                </div>
+                                <select class="form-control" id="ptgang">
+                                    <option value="0">0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptjay">%Hp jay</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox8sJ" value="8s">
+                                    <label class="form-check-label" for="checkbox8sJ">
+                                        8s
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox9sJ" value="9s">
+                                    <label class="form-check-label" for="checkbox9sJ">
+                                        9s
+                                    </label>
+                                </div>
+                                <select class="form-control" id="ptjay">
+                                    <option value="0">0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptrada">%Hp rada</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox8sRd" value="8s">
+                                    <label class="form-check-label" for="checkbox8sRd">
+                                        8s
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox9sRd" value="9s">
+                                    <label class="form-check-label" for="checkbox9sRd">
+                                        9s
+                                    </label>
+                                </div>
+                                <select class="form-control" id="ptrada">
+                                    <option value="0">0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptglt">%Hp glt</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox8sGlt" value="8s">
+                                    <label class="form-check-label" for="checkbox8sGlt">
+                                        8s
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkbox9sGlt" value="9s">
+                                    <label class="form-check-label" for="checkbox9sGlt">
+                                        9s
+                                    </label>
+                                </div>
+                                <select class="form-control" id="ptglt">
+                                    <option value="0">0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptsach">%Hp sách</label>
+                                <input type="number" class="form-control" id="ptsach">
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkNappa" name="checkNappa">
+                                <label class="form-check-label" for="checkNappa">Set Nappa</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkRong" name="checkRong">
+                                <label class="form-check-label" for="checkRong">Rồng Namec</label>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Chỉ số đệ -->
+                <aside class="col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <h5> Chỉ số đệ</h5>
+                            <div class="mb-3">
+                                <label for="hpgDe">Hpg đệ</label>
+                                <input type="number" class="form-control" id="hpgDe">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="cswanDe">Chỉ số wan đệ</label>
+                                <input type="number" class="form-control" id="cswanDe">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptctrDe">%Hp cải trang đệ</label>
+                                <input type="number" class="form-control" id="ptctrDe">
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkNappaDe" name="checkNappaDe">
+                                <label class="form-check-label" for="checkNappaDe">Set Nappa</label>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="tongHpDe" class="form-label"></label>
+                                <div class="form-control" id="tongHpDe"></div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h5> Set đồ</h5>
+                            <div class="mb-3">
+                                <label for="ptaoDe">%Hp áo đệ</label>
+                                <select class="form-control" id="ptaoDe">
+                                    <option value="0">0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptwanDe">%Hp wan đệ</label>
+                                <select class="form-control" id="ptwanDe">
+                                    <option value="0">0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptgangDe">%Hp găng đệ</label>
+                                <select class="form-control" id="ptgangDe">
+                                    <option value="0">0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptjayDe">%Hp jay đệ</label>
+                                <select class="form-control" id="ptjayDe">
+                                    <option value="0">0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ptradaDe">%Hp rada đệ</label>
+                                <select class="form-control" id="ptradaDe">
+                                    <option value="0">0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="checkbox-group mt-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox1" name="checkbox1">
+                                <label class="form-check-label" for="checkbox1">Bh1</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox2" name="checkbox2">
+                                <label class="form-check-label" for="checkbox2">Bh2</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox3" name="checkbox3">
+                                <label class="form-check-label" for="checkbox3">Tôm</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox4" name="checkbox4">
+                                <label class="form-check-label" for="checkbox4">Khỉ</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox5" name="checkbox5">
+                                <label class="form-check-label" for="checkbox5">Sáo</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox6" name="checkbox6">
+                                <label class="form-check-label" for="checkbox6">Xhp</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox7" name="checkbox7">
+                                <label class="form-check-label" for="checkbox7">Nrsđ 2s</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="tongHp" class="form-label"></label>
+                            <div class="form-control" id="tongHp"></div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary" id="btnTinhToan">Tính</button>
+
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container align-items-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center">
+                        Giá trị mang tính tương đối, không chính xác 100%
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-12">
+                        © 2024 Copyright:
+                        <a class="navbar-brand" href="https://www.facebook.com/PN.Hoang.stc/">
+                            Phạm Nhật Hoàng
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="logic.js"> </script>
+
+    <script src="logicSet.js"> </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#checkbox1, #checkbox2').change(function () {
+                if (this.checked) {
+                    $('#checkbox1, #checkbox2').not(this).prop('checked', false);
+                }
+            });
+            $('#btnTinhToan').click(tinhtoan);
+        });
+    </script>
+</body>
+
+</html>

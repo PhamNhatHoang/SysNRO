@@ -1,0 +1,66 @@
+.container {
+    max-width: 1300px;
+}
+
+.container>header,
+.container>footer {
+    height: 100px;
+    background: #99C7FE;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+
+}
+
+.container>nav {
+    height: 50px;
+    background: #FFA451;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container>main {
+    min-height: 350px;
+}
+
+.container>main>article,
+.container>main>aside {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container>header .logo h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 2px red;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#btnTinhToan {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#tongHp,
+#tongHpDe {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
