@@ -74,6 +74,22 @@ function tinhtoan() {
         }
     });
 
+    // Áp dụng các hệ số dựa trên trạng thái của checkbox 8s Đệ
+    var checkbox8sListDe = ['#checkbox8sADe', '#checkbox8sWDe', '#checkbox8sGDe', '#checkbox8sJDe', '#checkbox8sRdDe'];
+    checkbox8sListDe.forEach(function (id) {
+        if (isChecked(id)) {
+            hpDe *= 1.05; // Mỗi checkbox 8s thêm 5%
+        }
+    });
+
+    // Áp dụng các hệ số dựa trên trạng thái của checkbox 9s Đệ
+    var checkbox9sListDe = ['#checkbox9sADe', '#checkbox9sWDe', '#checkbox9sGDe', '#checkbox9sJDe', '#checkbox9sRdDe'];
+    checkbox9sListDe.forEach(function (id) {
+        if (isChecked(id)) {
+            hpDe *= 1.1025; // Mỗi checkbox 9s thêm 10.25% (5% + 5%)
+        }
+    });
+
     // Áp dụng các hệ số dựa trên trạng thái của các checkbox khác
     if (isChecked('#checkbox1')) {
         hpsu *= 2; // Bh1

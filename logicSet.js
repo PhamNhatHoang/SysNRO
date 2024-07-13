@@ -24,7 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
         ['checkbox8sG', 'checkbox9sG'],
         ['checkbox8sJ', 'checkbox9sJ'],
         ['checkbox8sRd', 'checkbox9sRd'],
-        ['checkbox8sGlt', 'checkbox9sGlt']
+        ['checkbox8sGlt', 'checkbox9sGlt'],
+        ['checkbox8sADe', 'checkbox9sADe'],
+        ['checkbox8sWDe', 'checkbox9sWDe'],
+        ['checkbox8sGDe', 'checkbox9sGDe'],
+        ['checkbox8sJDe', 'checkbox9sJDe'],
+        ['checkbox8sRdDe', 'checkbox9sRdDe']
     ];
 
     // Gán sự kiện cho từng cặp checkbox
