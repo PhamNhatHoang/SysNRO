@@ -43,17 +43,20 @@ function tinhtoan() {
     var ptjayDe = getInputValue('#ptjayDe');
     var ptradaDe = getInputValue('#ptradaDe');
 
+    var ptVpsk = getInputValue('#ptvpsk');
+
+
     // Tính toán hpDe
     var hpwDe = hpgDe + cswanDe;
     var hpDe = (hpwDe * (100 + ptaoDe) / 100 * (100 + ptwanDe) / 100 * (100 + ptgangDe) / 100
-        * (100 + ptjayDe) / 100 * (100 + ptradaDe) / 100 * (100 + ptctrDe) / 100);
+        * (100 + ptjayDe) / 100 * (100 + ptradaDe) / 100 * (100 + ptctrDe) / 100 *(100 + ptVpsk)/100);
 
     // Tính toán hp
     var hpw = hpg + cswan;
     var hp = (hpw * (100 + ptao) / 100 * (100 + ptwan) / 100 * (100 + ptgang) / 100
         * (100 + ptjay) / 100 * (100 + ptrada) / 100 * (100 + ptglt) / 100 * (100 + ptsach) / 100
         * (100 + ptctr) / 100 * (100 + ptvpdl) / 100 * (100 + ptvan) / 100 * (100 + ptpet) / 100
-        * (100 + ptbtc2) / 100 * (100 + ptdh) / 100);
+        * (100 + ptbtc2) / 100 * (100 + ptdh) / 100 * (100 + ptVpsk)/100);
 
     var hpsu = hp;
     var hpde = hpDe;
